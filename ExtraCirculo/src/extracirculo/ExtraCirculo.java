@@ -27,16 +27,16 @@ public class ExtraCirculo {
                     + "sector central da esfera: ");
             radio = teclado.nextFloat();
             if (radio <= 0) {
-                System.out.print("O radio non pode ser 0 ou negativo!");
+                System.out.println("O radio non pode ser 0 ou negativo!");
                 validar = false;
             } else {
                 validar = true;
             }
 
-        } while (validar == true);
-        System.out.println("A longitude é :" + 2 * Math.PI * radio);
-        System.out.println("O area é : :" + Math.PI * Math.pow(radio, 2));
-        System.out.println("O volume é :" + 4 * Math.PI * Math.pow(radio, 3) / 3);
+        } while (validar == false);
+        System.out.printf("\nA longitude é : %.3f cm", 2 * Math.PI * radio);
+        System.out.printf("\nO area é : %.3f cm²", Math.PI * Math.pow(radio, 2));
+        System.out.printf("\nO volume é : %.3f cm³", (4 * Math.PI * Math.pow(radio, 3)) / 3);
 
     }
 
