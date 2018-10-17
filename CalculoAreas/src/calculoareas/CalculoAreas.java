@@ -56,7 +56,7 @@ public class CalculoAreas {
                             + "\nRadio:");
                     float radio = teclado.nextFloat();
                     Circulo circ1 = new Circulo(radio);
-                    
+                    System.out.println("A área do circulo é :" + circ1.calculo(radio));
 
                     break;
                 case 4:
@@ -70,7 +70,11 @@ public class CalculoAreas {
                     float baseMenor = teclado.nextFloat();
                     System.out.println("Altura: ");
                     float alto = teclado.nextFloat();
+                    Trapecio trap1 = new Trapecio(baseMayor, baseMenor, alto);
+                    System.out.println("A área do Trapecio é :" + trap1.calculo(baseMayor, baseMenor, alto));
+
                     break;
+
                 default:
                     System.out.println("Esta opción non está contemplada.");
                     break;

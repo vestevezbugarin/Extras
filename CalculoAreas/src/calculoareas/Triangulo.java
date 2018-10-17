@@ -28,7 +28,7 @@ public class Triangulo {
     }
 
     public float calculo(float base, float altura) {
-
-        return 0;
+        float area = base * altura / 2;
+        return area;
     }
 }

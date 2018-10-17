@@ -28,8 +28,8 @@ public class Rectangulo {
     }
 
     public float calculo(float base, float altura) {
-
-        return 0;
+        float area = this.base * this.altura;
+        return area;
     }
 
 }

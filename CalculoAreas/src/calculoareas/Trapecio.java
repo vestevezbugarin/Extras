@@ -36,4 +36,8 @@ public class Trapecio {
         this.altura = altura;
     }
 
+    public float calculo(float baseMayor, float baseMenor, float altura) {
+        float area = ((baseMayor + baseMenor) / 2) * altura;
+        return area;
+    }
 }
