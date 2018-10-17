@@ -5,6 +5,12 @@ public class Triangulo {
     private float base;
     private float altura;
 
+    public Triangulo() {
+    }
+
+    public Triangulo(float base, float altura) {
+    }
+
     public float getBase() {
         return base;
     }
@@ -21,4 +27,8 @@ public class Triangulo {
         this.altura = altura;
     }
 
+    public float calculo(float base, float altura) {
+
+        return 0;
+    }
 }

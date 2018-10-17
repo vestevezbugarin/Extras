@@ -4,6 +4,13 @@ public class Trapecio {
 
     private float baseMayor;
     private float baseMenor;
+    private float altura;
+
+    public Trapecio() {
+    }
+
+    public Trapecio(float baseMayor, float baseMenor, float altura) {
+    }
 
     public float getBaseMayor() {
         return baseMayor;
@@ -28,6 +35,5 @@ public class Trapecio {
     public void setAltura(float altura) {
         this.altura = altura;
     }
-    private float altura;
 
 }

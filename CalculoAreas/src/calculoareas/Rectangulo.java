@@ -5,6 +5,12 @@ public class Rectangulo {
     private float base;
     private float altura;
 
+    public Rectangulo() {
+    }
+
+    public Rectangulo(float base, float altura) {
+    }
+
     public float getBase() {
         return base;
     }
@@ -19,6 +25,11 @@ public class Rectangulo {
 
     public void setAltura(float altura) {
         this.altura = altura;
+    }
+
+    public float calculo(float base, float altura) {
+
+        return 0;
     }
 
 }
