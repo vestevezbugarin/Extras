@@ -10,7 +10,12 @@ public class Trapecio {
     }
 
     public Trapecio(float baseMayor, float baseMenor, float altura) {
+        this.baseMayor = baseMayor;
+        this.baseMenor = baseMenor;
+        this.altura = altura;
     }
+
+    
 
     //Getters & Setters
     public float getBaseMayor() {
@@ -37,7 +42,7 @@ public class Trapecio {
         this.altura = altura;
     }
 
-    public float calculo(float baseMayor, float baseMenor, float altura) {
+    public float calculo() {
         float area = ((baseMayor + baseMenor) / 2) * altura;
         return area;
     }

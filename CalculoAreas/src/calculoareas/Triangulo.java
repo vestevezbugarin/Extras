@@ -9,7 +9,11 @@ public class Triangulo {
     }
 
     public Triangulo(float base, float altura) {
+        this.base = base;
+        this.altura = altura;
     }
+
+    
 
     //Getters & Setters
     public float getBase() {
@@ -28,7 +32,7 @@ public class Triangulo {
         this.altura = altura;
     }
 
-    public float calculo(float base, float altura) {
+    public float calculo() {
         float area = base * altura / 2;
         return area;
     }

@@ -9,10 +9,11 @@ public class Rectangulo {
     }
 
     public Rectangulo(float base, float altura) {
+        this.base = base;
+        this.altura = altura;
     }
-    
-    //Getters & Setters
 
+    //Getters & Setters
     public float getBase() {
         return base;
     }
@@ -29,8 +30,8 @@ public class Rectangulo {
         this.altura = altura;
     }
 
-    public float calculo(float base, float altura) {
-        float area = this.base * this.altura;
+    public float calculo() {
+        float area = base * altura;
         return area;
     }
 

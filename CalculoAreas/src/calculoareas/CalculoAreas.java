@@ -7,7 +7,7 @@ public class CalculoAreas {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        byte selec = 0;
+        byte selec = 1;
 
         System.out.println("\n***********************************************************************"
                 + "\n                           Calculadora de áreas                        "
@@ -31,8 +31,9 @@ public class CalculoAreas {
                     float altura = teclado.nextFloat();
 
                     Rectangulo rect1 = new Rectangulo(base, altura);
-                    System.out.println("A area do Rectangulo é :" + rect1.calculo(base, altura));
 
+                    System.out.println("A area do Rectangulo é :" + rect1.calculo()
+                            + "\n***********************************************************************");
                     break;
                 case 2:
                     System.out.println("\n***********************************************************************"
@@ -45,7 +46,8 @@ public class CalculoAreas {
                     float alturaT = teclado.nextFloat();
 
                     Triangulo tria1 = new Triangulo(baseT, alturaT);
-                    System.out.println("A área do Triangulo é:" + tria1.calculo(baseT, alturaT));
+                    System.out.println("A área do Triangulo é:" + tria1.calculo()
+                            + "\n***********************************************************************");
 
                     break;
                 case 3:
@@ -56,7 +58,8 @@ public class CalculoAreas {
                             + "\nRadio:");
                     float radio = teclado.nextFloat();
                     Circulo circ1 = new Circulo(radio);
-                    System.out.println("A área do circulo é :" + circ1.calculo(radio));
+                    System.out.println("A área do circulo é :" + circ1.calculo()
+                            + "\n***********************************************************************");
 
                     break;
                 case 4:
@@ -71,10 +74,14 @@ public class CalculoAreas {
                     System.out.println("Altura: ");
                     float alto = teclado.nextFloat();
                     Trapecio trap1 = new Trapecio(baseMayor, baseMenor, alto);
-                    System.out.println("A área do Trapecio é :" + trap1.calculo(baseMayor, baseMenor, alto));
+                    System.out.println("A área do Trapecio é :" + trap1.calculo()
+                            + "\n***********************************************************************");
 
                     break;
-
+                case 0:
+                    a = 0;
+                    System.out.println("\n ¡Hasta luego... (ノ ಥ ウಥ )ノ  ");
+                    break;
                 default:
                     System.out.println("Esta opción non está contemplada.");
                     break;
