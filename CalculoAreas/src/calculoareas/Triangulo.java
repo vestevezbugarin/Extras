@@ -11,6 +11,7 @@ public class Triangulo {
     public Triangulo(float base, float altura) {
     }
 
+    //Getters & Setters
     public float getBase() {
         return base;
     }

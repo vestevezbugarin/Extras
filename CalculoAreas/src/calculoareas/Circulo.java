@@ -10,6 +10,7 @@ public class Circulo {
     public Circulo(float radio) {
     }
 
+    //Getters & Setters
     public float getRadio() {
         return radio;
     }

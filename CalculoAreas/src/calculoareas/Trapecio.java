@@ -12,6 +12,7 @@ public class Trapecio {
     public Trapecio(float baseMayor, float baseMenor, float altura) {
     }
 
+    //Getters & Setters
     public float getBaseMayor() {
         return baseMayor;
     }
