@@ -40,7 +40,7 @@ public class Avaliacion {
         } catch (HeadlessException | NumberFormatException e) {
             e.getMessage();  //erro por consola que non ten unha  utilidade real
         }
-        return notaT;
+        return this.notaT;
     }
 
     public float getNotaP() {
@@ -104,10 +104,15 @@ public class Avaliacion {
 
         try {
             int notaF = (int) (getNotaT() + getNotaP() + getBoletines());
+            
             if (notaF <= 0) {
-                JOptionPane.showMessageDialog(null, "O alumno non cumpre os requisitos(!)\n   Nota final: 1 ", "Avaliación", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "O alumno non cumpre os requisitos(!)\nNota final: 1 ", "Avaliación", JOptionPane.ERROR_MESSAGE);
+
+            } else if (notaF >= 1) {
+                JOptionPane.showMessageDialog(null, "Nota da avaliación: " + notaF, "Avaliación", JOptionPane.INFORMATION_MESSAGE);
 
             } else if (notaF > 10) {
+
                 notaF = 10;
                 JOptionPane.showMessageDialog(null, "Nota da avaliación: " + notaF, "Avaliación", JOptionPane.INFORMATION_MESSAGE);
 
